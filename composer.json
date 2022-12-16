@@ -1,0 +1,21 @@
+{
+    "name": "justcrm/crm",
+    "type": "project",
+    "license": "MTI",
+    "autoload": {
+        "psr-4": {
+            "Justcrm\\Crm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bekim Fetahu",
+            "email": "bekim.fetahu@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.5.0"
+    }
+}
