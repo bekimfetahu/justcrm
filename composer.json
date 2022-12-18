@@ -1,7 +1,9 @@
 {
     "name": "justcrm/crm",
-    "type": "project",
-    "license": "MTI",
+    "type": "library",
+    "description": "Package built for Just Crm",
+    "homepage": "https://github.com/bekimfetahu/justcrm/crm",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Justcrm\\Crm\\": "src/"
