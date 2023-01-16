@@ -19,5 +19,12 @@
     "require": {
         "php": "^7.4|^8.0",
         "guzzlehttp/guzzle": "^7.5.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Justcrm\\Crm\\Providers\\JustcrmProvider::class"
+            ]
+        }
     }
 }
