@@ -10,7 +10,7 @@ class JustcrmProvider extends ServiceProvider
     
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'justcrm');
+        $this->mergeConfigFrom(__DIR__.'/../config/justcrm.php', 'justcrm');
     }
     /**
      * Bootstrap services.
