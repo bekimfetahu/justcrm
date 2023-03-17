@@ -23,8 +23,15 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Justcrm\\Crm\\Providers\\JustcrmProvider::class"
+                "Justcrm\\Crm\\Providers\\JustCrmProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan vendor:publish --tag={justcrm}--force"
+        ]
     }
 }
