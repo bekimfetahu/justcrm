@@ -10,6 +10,8 @@ Usage:
 ``<CrmLogin>Login with JustCRM</CrmLogin>``
 
 CrmLogin.vue
+
+Create a Vue component and add call it in front end. No other setup required
 ```<script setup>
 import {ref, onMounted} from 'vue'
 import axios from "axios";
