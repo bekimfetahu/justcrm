@@ -30,10 +30,7 @@ class LoginController extends Controller
             'Accept' => 'application/json',
             'Authorization' => 'Bearer ' . $bearerToken,
         ])->get(config('justcrm.api') . '/client/token/' . $connectionToken . '/connection/info');
-    
-        https://compassionate-archimedes.88-208-212-203.plesk.page/api/v1/client/token/'.$connectionToken.'/connection/info
         
-      
         
         $connectionUuid = $responseData->json()['data']['connected_account']['uuid'] ?? null;
         $connectionName = $responseData->json()['data']['connected_account']['name'] ?? null;
