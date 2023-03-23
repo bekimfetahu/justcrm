@@ -64,3 +64,9 @@ async function getSsoAccess() {
 
 
 ```
+Add to .env
+```
+JUSTCRM_URL="https://compassionate-archimedes.88-208-212-203.plesk.page"
+JUSTCRM_CLIENT_ID=""
+JUSTCRM_CLIENT_SECRET=""
+JUSTCRM_CUSTOMER_ID=""```
