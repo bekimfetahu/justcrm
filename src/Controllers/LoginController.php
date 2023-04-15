@@ -42,6 +42,9 @@ class LoginController extends Controller
                 ['name' => $connectionName]
             );
             
+            $user->name = $connectionName;
+            $user->save();
+            
             Auth::login($user, true);
             $loggedUser = Auth::user();
             return [
