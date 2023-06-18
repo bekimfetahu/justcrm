@@ -37,13 +37,14 @@ class LoginController extends Controller
         
         if ($connectionUuid && $connectionName) {
             
-            $user = User::firstOrCreate(
-                ['email' => $connectionUuid],
-                ['name' => $connectionName]
-            );
+            $user = User::where('email',$connectionUuid)->first();
             
-            $user->name = $connectionName;
-            $user->save();
+            if(!$user) {
+                $user = User::create([
+                        'email' => $connectionUuid, 'name' => $connectionName
+                    ]
+                );
+            }
             
             Auth::login($user, true);
             $loggedUser = Auth::user();
